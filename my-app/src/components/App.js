@@ -8,8 +8,6 @@ import FavoriteMusic from "./FavoriteMusic";
 
 function App() {
 
-  const []
-  
   return (
     <>
     <NavBar/>
