@@ -15,13 +15,13 @@ CSS
 ## Setting-up
 Clone the repository.
 
-$ git clone git@github.com:Navuru/Beats.git
+### `$ git clone git@github.com:Navuru/Beats.git`
 
-$ cd Beats
+### `$ cd Beats`
 
 ## Install npm packages
 
-$ npm install
+### `$ npm install`
 
 Optionally use this link to get started; ####
 
