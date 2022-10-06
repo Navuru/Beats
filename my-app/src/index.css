@@ -28,14 +28,7 @@ body {
   a {
     text-decoration: none;
   }
-  .favorites{
-    background-image: url("https://images.unsplash.com/photo-1628773193539-ad29c647c071?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGFpcnBvZHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
-    height: 700px;
-    width: auto;
-    background-repeat: no-repeat;
-    border: solid;
-    background-size: contain;
-  }
+
 .footer{
   display: flex;
   padding: 20px;

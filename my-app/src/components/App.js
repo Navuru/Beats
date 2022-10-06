@@ -1,6 +1,6 @@
 // import React from "react";
 import ReactDOM  from "react-dom/client";
-// import { BrowserRouter as Routes, Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom";
 import MusicPage from "./MusicPage";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
@@ -9,16 +9,18 @@ import FavoriteMusic from "./FavoriteMusic";
 function App() {
 
   return (
-    <>
+    <div className="App">
     <NavBar/>
-    {/* <Routes>
-        <Route path ="/home" element={<Home/>}/>
-        <Route path ="/musicpage" element={<MusicPage/>}/>
-        <Route path ="/favoritemusic" element={<FavoriteMusic/>}/>
-      </Routes> */}
-    <MusicPage/>
-    <Footer/>
-      </>
+
+      <Routes>
+          <Route exact path="/home" element={<MusicPage/>}/>
+          <Route path="/favorites" element={<FavoriteMusic/>}/>
+        </Routes>
+
+      {/* <MusicPage/> */}
+      <Footer/>
+    </div>
+     
       
     
   );

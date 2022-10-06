@@ -15,13 +15,11 @@ function MusicPage({music}) {
       }
 
       return (
-        <div>
+        <div id="home">
             <MusicCollection music={music} 
-              // handleAdd={addToFaves}
             // addToFaves={addToFaves} 
-            // handleSearch={handeSearch} 
             />
-            <FavoriteMusic music={music} addToFaves={addToFaves}/>
+            {/* <FavoriteMusic music={music} addToFaves={addToFaves}/> */}
         </div>
       )
 }

@@ -10,7 +10,6 @@ function MusicCollection(addToFaves) {
           .then((res) => res.json())
           .then((data) => setMusic(data)
             // console.log(musicList)
-            // let data = musicList;
         )
       },[])
 
@@ -20,9 +19,11 @@ function MusicCollection(addToFaves) {
                 <h2>Collection</h2>
                 {musicList.map((music,index) => (
                     <MusicCard key={index} music={music}
+                    handleMusic={addToFaves}
                      />
                     
                 ))}
+                {/* <h3>Cool Music</h3> */}
                 
             </div>
         </div>

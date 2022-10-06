@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 function NavBar() {
 
@@ -9,7 +10,6 @@ function NavBar() {
         console.log(search)
     
         if(search === ""){
-        //   console.log("load all")
           setSearchState(!searchState)
         }
         let filteredMusic = musicList.filter((music)=>{
@@ -29,18 +29,21 @@ function NavBar() {
                 <button 
                 className="btn btn-outline-success" 
                 type="submit"
-                // onSubmit={(e) => {
-                //     handleSearch(e.target.value)
-                // }}
-                onSubmit={handleSearch}
+                onSubmit={(e) => {
+                    handleSearch(e.target.value)
+                }}
                 >
                 Search
                 </button>
             </form>
             <div className='links'>
                 <ul className='links_list'>
-                    <li><a href = "#">Home</a></li>
-                    <li><a href = "#">Favorites</a></li>
+                    <li>
+                      <Link to="/home">Home</Link>
+                    </li>
+                    <li>
+                      <Link to="/favorites">Favorites</Link>
+                    </li>
                 </ul>
             </div>
             </div>
