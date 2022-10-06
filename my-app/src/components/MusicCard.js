@@ -25,18 +25,9 @@ function MusicCard ({music,addToFaves}) {
 
             <div className="card-body">
             <h4 className="card-title">{music.name}</h4>
-            {/* <p className="card-text"></p> */}
            <div 
         //    className="btn btn-primary"
            >
-            <button style={{color:"red"}}
-                // className="ui mini red button"
-                // onClick={addToFaves}
-                >
-                {/* <i className="fa-light fa-heart"></i> */}
-                likes
-            </button>
-           
             <button>
                 play
             </button>
